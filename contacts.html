@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и запись | РеаМед+</title>
+  <meta name="description" content="Шаблон страницы контактов РеаМед+: адрес, карта, часы работы и форма записи.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <div class="utility-bar"><div class="container utility-bar__content"><p>Курск, ул. Союзная, 26</p><p>Пн-Пт 9:00-20:00 | Сб 9:00-16:00</p><a href="tel:+74712273787">+7 (4712) 27-37-87</a></div></div>
+      <div class="container header-main">
+        <a class="brand" href="index.html"><span class="brand__mark">Р+</span><span class="brand__text"><strong>РеаМед+</strong><small>центр реабилитации и восстановительной медицины</small></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>Меню</button>
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a href="index.html#directions">Направления</a><a href="service.html">Услуги</a><a href="specialists.html">Специалисты</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a><a class="button button--primary button--sm" href="#contact-form">Записаться</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Контакты</span></nav>
+          <div class="page-hero__grid">
+            <div><p class="eyebrow">Контакты и запись</p><h1>Все способы связи собраны в одном спокойном и понятном сценарии</h1><p>Страница помогает быстро позвонить, оставить заявку, уточнить адрес и режим работы без лишних действий.</p></div>
+            <aside class="page-hero__aside"><strong>Главные CTA</strong><p>Позвонить, заказать обратный звонок, записаться к специалисту или уточнить подготовку к визиту.</p></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column-layout">
+          <article class="content-card"><h2>Контактная информация</h2><ul class="contact-list"><li><strong>Телефон:</strong> <a href="tel:+74712273787">+7 (4712) 27-37-87</a></li><li><strong>Email:</strong> <a href="mailto:reamedplus@yandex.ru">reamedplus@yandex.ru</a></li><li><strong>Адрес:</strong> Курск, ул. Союзная, 26</li><li><strong>Режим работы:</strong> Пн-Пт 9:00-20:00, Сб 9:00-16:00</li></ul></article>
+          <article class="content-card content-card--map"><h2>Карта и ориентиры</h2><div class="map-placeholder"><span>Место для встраиваемой карты</span></div></article>
+        </div>
+      </section>
+
+      <section class="section section--contrast" id="contact-form">
+        <div class="container appointment">
+          <div class="appointment__intro"><p class="eyebrow eyebrow--light">Форма записи</p><h2>Оставьте заявку и получите обратную связь в удобном формате.</h2><p>Блок можно связать с существующей логикой записи, CRM или коллтрекингом без полной переработки backend-части.</p></div>
+          <form class="appointment-form">
+            <label>Имя<input type="text" name="name" placeholder="Как к вам обращаться"></label>
+            <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__"></label>
+            <label>Нужен специалист<input type="text" name="doctor" placeholder="Если знаете фамилию врача"></label>
+            <label>Комментарий<textarea name="comment" rows="4" placeholder="Опишите запрос, удобное время или формат связи"></textarea></label>
+            <button class="button button--primary" type="submit">Отправить заявку</button>
+            <p class="form-note">Отправка формы подразумевает согласие на обработку персональных данных.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><a class="brand brand--footer" href="index.html"><span class="brand__mark">Р+</span><span class="brand__text"><strong>РеаМед+</strong><small>центр медицинской реабилитации</small></span></a></div>
+        <div><h3>Навигация</h3><a href="service.html">Услуги</a><a href="specialists.html">Специалисты</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a></div>
+        <div><h3>Контакты</h3><a href="tel:+74712273787">+7 (4712) 27-37-87</a><a href="mailto:reamedplus@yandex.ru">reamedplus@yandex.ru</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

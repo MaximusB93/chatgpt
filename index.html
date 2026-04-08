@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>РеаМед+ | Центр медицинской реабилитации</title>
+  <meta name="description" content="Редизайн главной страницы РеаМед+: реабилитация, специалисты, документы и запись в одном премиальном интерфейсе.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <div class="utility-bar">
+        <div class="container utility-bar__content">
+          <p>Курск, ул. Союзная, 26</p>
+          <p>Пн-Пт 9:00-20:00 | Сб 9:00-16:00</p>
+          <a href="tel:+74712273787">+7 (4712) 27-37-87</a>
+        </div>
+      </div>
+      <div class="container header-main">
+        <a class="brand" href="index.html" aria-label="РеаМед+">
+          <span class="brand__mark">Р+</span>
+          <span class="brand__text">
+            <strong>РеаМед+</strong>
+            <small>центр реабилитации и восстановительной медицины</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>Меню</button>
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a href="#directions">Направления</a>
+          <a href="service.html">Услуги</a>
+          <a href="specialists.html">Специалисты</a>
+          <a href="documents.html">Документы</a>
+          <a href="contacts.html">Контакты</a>
+          <a class="button button--primary button--sm" href="#appointment">Записаться</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Медицинская реабилитация и экспертная забота</p>
+            <h1>Современный центр, где восстановление строится на доверии, маршруте и внимании к пациенту.</h1>
+            <p class="hero__lead">РеаМед+ объединяет реабилитацию, прием специалистов и диагностику в одном понятном и спокойном интерфейсе.</p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#appointment">Записаться на прием</a>
+              <a class="button button--ghost" href="#trust">Почему нам доверяют</a>
+            </div>
+            <dl class="hero__metrics">
+              <div><dt>15+</dt><dd>лет системной работы центра</dd></div>
+              <div><dt>ОМС</dt><dd>реабилитация по госгарантиям</dd></div>
+              <div><dt>30+</dt><dd>специалистов и направлений</dd></div>
+            </dl>
+          </div>
+          <aside class="hero-card">
+            <p class="hero-card__label">Быстрый маршрут пациента</p>
+            <div class="hero-card__list">
+              <article><span>01</span><div><h2>Понять, куда обратиться</h2><p>Подберем направление и нужного специалиста под ваш запрос.</p></div></article>
+              <article><span>02</span><div><h2>Пройти курс восстановления</h2><p>Амбулаторные программы и помощь в условиях дневного стационара.</p></div></article>
+              <article><span>03</span><div><h2>Закрыть диагностику без перегрузки</h2><p>Прием, анализы, документы и поддержка в едином маршруте пациента.</p></div></article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section trust-strip" id="trust">
+        <div class="container trust-strip__grid">
+          <article class="trust-badge"><p class="trust-badge__title">Лицензии и документы</p><p>Вся обязательная документация вынесена в понятный и спокойный раздел.</p></article>
+          <article class="trust-badge"><p class="trust-badge__title">ОМС и амбулаторная помощь</p><p>Реабилитация доступна в рамках программы госгарантий.</p></article>
+          <article class="trust-badge"><p class="trust-badge__title">Команда специалистов</p><p>Неврология, восстановительное лечение, психология и диагностика.</p></article>
+          <article class="trust-badge"><p class="trust-badge__title">Понятная запись</p><p>Телефон, форма и маршруты CTA встроены в логику страницы.</p></article>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="directions">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Ключевые направления</p>
+            <h2>Главные сценарии обращения собраны без перегруженного каталога</h2>
+            <p>Пациент быстро понимает, что выбрать: реабилитацию, медицинские услуги или лабораторную диагностику.</p>
+          </div>
+          <div class="card-grid card-grid--three">
+            <article class="feature-card feature-card--highlight"><p class="feature-card__kicker">01</p><h3>Реабилитация</h3><p>Программы восстановления после неврологических, травматологических и соматических состояний.</p><a class="text-link" href="service.html">Открыть направление</a></article>
+            <article class="feature-card"><p class="feature-card__kicker">02</p><h3>Медицинские услуги</h3><p>Прием профильных специалистов, консультации и комплексное сопровождение пациента.</p><a class="text-link" href="service.html">Посмотреть услуги</a></article>
+            <article class="feature-card"><p class="feature-card__kicker">03</p><h3>Анализы</h3><p>Лабораторная диагностика как часть единого маршрута пациента и лечения.</p><a class="text-link" href="service.html">Уточнить анализы</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-block">
+          <div class="split-block__content">
+            <p class="eyebrow">Почему РеаМед+</p>
+            <h2>Премиальное ощущение рождается из ясной структуры, чистой типографики и уважения ко времени пациента.</h2>
+            <div class="benefit-list">
+              <article><h3>Один маршрут вместо разрозненных услуг</h3><p>От консультации к лечению и реабилитации без хаотичного поиска разделов.</p></article>
+              <article><h3>Спокойный сервис и аккуратная запись</h3><p>Шапка, формы и CTA ведут к действию без агрессивных всплывающих блоков.</p></article>
+              <article><h3>Юридическая прозрачность</h3><p>Документы и лицензии остаются в фокусе, но не создают шум на первом экране.</p></article>
+            </div>
+          </div>
+          <div class="quote-panel">
+            <p class="quote-panel__lead">Реабилитация в центре внимания</p>
+            <blockquote>Сайт должен выглядеть так же надежно, как работает клиника: уверенно, современно и без визуального шума.</blockquote>
+            <div class="quote-panel__facts">
+              <div><strong>Дневной стационар</strong><span>комфортный формат курсового восстановления</span></div>
+              <div><strong>Амбулаторный прием</strong><span>быстрый доступ к специалистам и обследованиям</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-heading section-heading--between">
+            <div>
+              <p class="eyebrow">Специалисты</p>
+              <h2>Команда, которой доверяют восстановление</h2>
+            </div>
+            <a class="button button--ghost button--sm" href="specialists.html">Все специалисты</a>
+          </div>
+          <div class="card-grid card-grid--three">
+            <article class="doctor-card"><div class="doctor-card__photo doctor-card__photo--emerald"></div><h3>Ангелина Сергеевна Милостных</h3><p>Врач-невролог</p><span>Реабилитационные маршруты и неврологические программы восстановления</span></article>
+            <article class="doctor-card"><div class="doctor-card__photo doctor-card__photo--sand"></div><h3>Евангелина Олеговна Маслова</h3><p>Медицинский психолог</p><span>Психологическое сопровождение и адаптация пациента в ходе лечения</span></article>
+            <article class="doctor-card"><div class="doctor-card__photo doctor-card__photo--slate"></div><h3>Олег Сергеевич Пашечко</h3><p>Врач восстановительной медицины</p><span>Комплексные курсы и координация лечебно-реабилитационного процесса</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Популярные сценарии</p>
+            <h2>Страница помогает сориентироваться по причине обращения, а не просто перечисляет услуги</h2>
+          </div>
+          <div class="journey-grid">
+            <article class="journey-card"><h3>После неврологического заболевания</h3><p>Нужна программа реабилитации, наблюдение специалиста и поэтапное восстановление функций.</p></article>
+            <article class="journey-card"><h3>После травмы или операции</h3><p>Требуется безопасный план восстановления с учетом диагноза и прогресса пациента.</p></article>
+            <article class="journey-card"><h3>Когда нужен понятный маршрут лечения</h3><p>Консультация, анализы, подбор врача и координация следующих шагов.</p></article>
+            <article class="journey-card"><h3>Для планового наблюдения</h3><p>Повторные приемы, поддерживающая терапия и контроль состояния в одном центре.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container proof-layout">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Доверие и репутация</p>
+              <h2>Социальное доказательство работает мягко, но убедительно</h2>
+            </div>
+            <div class="review-stack">
+              <article class="review-card"><p>“На сайте сразу видно, что клиника серьезная: документы, направления и запись собраны в одной логике.”</p><strong>Пациентка курса реабилитации</strong></article>
+              <article class="review-card"><p>“Удобно, что прием, анализы и консультации не раскиданы по разным разделам, а ведут к понятному действию.”</p><strong>Повторный пациент центра</strong></article>
+            </div>
+          </div>
+          <div class="news-panel">
+            <h3>Актуальное</h3>
+            <article><span>03.02.2021</span><a href="#">Программа реабилитации неврологических больных</a></article>
+            <article><span>Документы</span><a href="documents.html">Выписка из реестра лицензий и обязательная информация</a></article>
+            <article><span>Для пациента</span><a href="contacts.html">Как записаться и подготовиться к первому визиту</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container docs-callout">
+          <div>
+            <p class="eyebrow">Документы и прозрачность</p>
+            <h2>Все обязательные сведения собраны в отдельном блоке доверия</h2>
+          </div>
+          <div class="docs-callout__links">
+            <a href="documents.html">Выписка из реестра лицензий</a>
+            <a href="documents.html">Политика обработки персональных данных</a>
+            <a href="documents.html">Сведения о юрлице и лицензировании</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contrast" id="appointment">
+        <div class="container appointment">
+          <div class="appointment__intro">
+            <p class="eyebrow eyebrow--light">Запись</p>
+            <h2>Оставьте заявку, и администратор поможет выбрать специалиста или направление.</h2>
+            <p>Форма задумана как CMS-friendly блок, который можно связать с текущим сайтом, CRM или логикой обратного звонка.</p>
+          </div>
+          <form class="appointment-form">
+            <label>Имя<input type="text" name="name" placeholder="Как к вам обращаться"></label>
+            <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__"></label>
+            <label>Что вас интересует<select name="interest"><option>Реабилитация</option><option>Прием специалиста</option><option>Анализы</option><option>Обратный звонок</option></select></label>
+            <label>Комментарий<textarea name="comment" rows="4" placeholder="Кратко опишите задачу или удобное время для связи"></textarea></label>
+            <button class="button button--primary" type="submit">Отправить заявку</button>
+            <p class="form-note">Нажимая кнопку, вы подтверждаете согласие на обработку персональных данных.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Ответы на частые вопросы перед первым обращением</h2>
+          </div>
+          <div class="faq-list" data-accordion>
+            <article class="faq-item"><button type="button" class="faq-item__trigger" aria-expanded="false">Можно ли записаться на реабилитацию по ОМС?</button><div class="faq-item__content"><p>Да, для этого сохранен отдельный trust-блок и страница документов с условиями программы госгарантий.</p></div></article>
+            <article class="faq-item"><button type="button" class="faq-item__trigger" aria-expanded="false">Как выбрать специалиста, если я не уверен в направлении?</button><div class="faq-item__content"><p>Главная и форма записи подсказывают понятный первый шаг: выбрать причину обращения и получить помощь администратора.</p></div></article>
+            <article class="faq-item"><button type="button" class="faq-item__trigger" aria-expanded="false">Где посмотреть лицензии и юридическую информацию?</button><div class="faq-item__content"><p>Обязательные документы выделены в отдельный раздел и продублированы в подвале сайта.</p></div></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand--footer" href="index.html">
+            <span class="brand__mark">Р+</span>
+            <span class="brand__text"><strong>РеаМед+</strong><small>центр медицинской реабилитации</small></span>
+          </a>
+          <p class="footer-copy">Современный интерфейс для клиники с акцентом на доверие, документы, врачей и понятную запись.</p>
+        </div>
+        <div><h3>Навигация</h3><a href="service.html">Услуги</a><a href="specialists.html">Специалисты</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a></div>
+        <div><h3>Контакты</h3><a href="tel:+74712273787">+7 (4712) 27-37-87</a><a href="mailto:reamedplus@yandex.ru">reamedplus@yandex.ru</a><p>Курск, ул. Союзная, 26</p></div>
+        <div><h3>Правовая информация</h3><a href="documents.html">Лицензии</a><a href="documents.html">Политика конфиденциальности</a><a href="documents.html">Пользовательское соглашение</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

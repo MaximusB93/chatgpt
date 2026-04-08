@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка врача | РеаМед+</title>
+  <meta name="description" content="Шаблон карточки врача РеаМед+: компетенции, направления, запись и доверие.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <div class="utility-bar"><div class="container utility-bar__content"><p>Курск, ул. Союзная, 26</p><p>Пн-Пт 9:00-20:00 | Сб 9:00-16:00</p><a href="tel:+74712273787">+7 (4712) 27-37-87</a></div></div>
+      <div class="container header-main">
+        <a class="brand" href="index.html"><span class="brand__mark">Р+</span><span class="brand__text"><strong>РеаМед+</strong><small>центр реабилитации и восстановительной медицины</small></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>Меню</button>
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a href="index.html#directions">Направления</a><a href="service.html">Услуги</a><a href="specialists.html">Специалисты</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a><a class="button button--primary button--sm" href="contacts.html#contact-form">Записаться</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><a href="specialists.html">Специалисты</a><span>/</span><span>Карточка врача</span></nav>
+          <div class="profile-hero">
+            <div class="profile-hero__photo"></div>
+            <div>
+              <p class="eyebrow">Карточка врача</p>
+              <h1>Ангелина Сергеевна Милостных</h1>
+              <p class="profile-hero__role">Врач-невролог</p>
+              <p>Шаблон карточки показывает компетенции врача, направления приема и удобный путь к записи без визуальной перегрузки.</p>
+              <div class="hero__actions"><a class="button button--primary" href="contacts.html#contact-form">Записаться к врачу</a><a class="button button--ghost" href="service.html">Связанные услуги</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column-layout">
+          <article class="content-card"><h2>Компетенции</h2><ul class="bullet-list"><li>первичный и повторный неврологический прием;</li><li>маршрутизация на курс реабилитации;</li><li>оценка динамики восстановления;</li><li>координация дальнейшего наблюдения.</li></ul></article>
+          <article class="content-card"><h2>Интеграция в CMS</h2><ul class="bullet-list"><li>образование и сертификаты;</li><li>опыт и расписание приема;</li><li>связанные направления лечения;</li><li>кнопки записи и контактные сценарии.</li></ul></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><a class="brand brand--footer" href="index.html"><span class="brand__mark">Р+</span><span class="brand__text"><strong>РеаМед+</strong><small>центр медицинской реабилитации</small></span></a></div>
+        <div><h3>Навигация</h3><a href="service.html">Услуги</a><a href="specialists.html">Специалисты</a><a href="documents.html">Документы</a><a href="contacts.html">Контакты</a></div>
+        <div><h3>Контакты</h3><a href="tel:+74712273787">+7 (4712) 27-37-87</a><a href="mailto:reamedplus@yandex.ru">reamedplus@yandex.ru</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
