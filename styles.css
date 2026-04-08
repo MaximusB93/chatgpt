@@ -36,6 +36,7 @@ body {
   color: var(--text);
   font-family: "Manrope", "Segoe UI", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
@@ -380,6 +381,20 @@ p {
   margin-top: 22px;
 }
 
+.hero-card__visual {
+  margin-top: 20px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(32, 52, 54, 0.08);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hero-card__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero-card__list article {
   display: grid;
   grid-template-columns: 56px 1fr;
@@ -452,6 +467,10 @@ p {
 .card-grid {
   display: grid;
   gap: 22px;
+}
+
+.card-grid > * {
+  height: 100%;
 }
 
 .card-grid--three {
@@ -550,6 +569,7 @@ p {
 .doctor-card {
   display: grid;
   gap: 10px;
+  align-content: start;
 }
 
 .doctor-card__photo,
@@ -570,16 +590,16 @@ p {
   border-radius: 18px;
 }
 
-.doctor-card__photo--emerald {
-  background: linear-gradient(145deg, #e8d9bd, #5d8d8a);
+.doctor-card__photo img,
+.profile-hero__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.doctor-card__photo--sand {
-  background: linear-gradient(145deg, #e5d2af, #9a7f61);
-}
-
-.doctor-card__photo--slate {
-  background: linear-gradient(145deg, #ded8cd, #5a6873);
+.doctor-card .text-link {
+  margin-top: auto;
 }
 
 .journey-grid {
@@ -817,7 +837,6 @@ p {
 
 .profile-hero__photo {
   min-height: 360px;
-  background: linear-gradient(145deg, #e2cfad, #5f8e8a);
 }
 
 .profile-hero__role {
@@ -883,6 +902,10 @@ p {
   .journey-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-card {
+    max-width: 720px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -930,6 +953,10 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .hero-card__visual {
+    border-radius: 22px;
+  }
+
   .section-heading--between {
     align-items: start;
     flex-direction: column;
@@ -972,5 +999,10 @@ p {
 
   .hero-card__list article {
     grid-template-columns: 1fr;
+  }
+
+  .doctor-card__photo,
+  .profile-hero__photo {
+    min-height: 220px;
   }
 }
